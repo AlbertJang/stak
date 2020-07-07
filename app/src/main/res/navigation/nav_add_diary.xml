@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/addCompanyFragment">
+
+    <fragment
+        android:id="@+id/addCompanyFragment"
+        android:name="fun.stak.views.diary.adddiary.fragment.addcompany.AddCompanyFragment"
+        android:label="AddCompany"
+        tools:layout="@layout/fragment_add_compnay" >
+
+        <action
+            android:id="@+id/action_addCompanyFragment_to_diaryBuyFragment"
+            app:destination="@id/diaryBuyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/diaryBuyFragment"
+        android:name="fun.stak.views.diary.adddiary.fragment.diaryPay.DiaryPayFragment"
+        android:label="DiaryBuy"
+        tools:layout="@layout/fragment_diary_pay" />
+</navigation>

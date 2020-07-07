@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/companyinfo"
+    app:startDestination="@id/companyInfoFragment">
+
+    <fragment
+        android:id="@+id/companyInfoFragment"
+        android:name="fun.stak.views.company.CompanyInfoFragment"
+        android:label="CompanyInfo"
+        tools:layout="@layout/fragment_company_info" >
+
+        <action
+            android:id="@+id/action_companyInfo_to_companyDetail"
+            app:destination="@id/companyDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyDetailFragment"
+        android:name="fun.stak.views.company.CompanyDetailFragment"
+        android:label="CompanyDetail"
+        tools:layout="@layout/fragment_company_detail" />
+</navigation>

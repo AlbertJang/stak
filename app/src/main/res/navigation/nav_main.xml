@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="fun.stak.views.main.DashBoardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dash_board" />
+
+    <fragment
+        android:id="@+id/diary"
+        android:name="fun.stak.views.diary.DiaryFragment"
+        android:label="Diary"
+        tools:layout="@layout/fragment_diary" />
+
+    <fragment
+        android:id="@+id/analytics"
+        android:name="fun.stak.views.main.AnalyticsFragment"
+        android:label="Analytics"
+        tools:layout="@layout/fragment_analytics" />
+
+    <fragment
+        android:id="@+id/companyinfo"
+        android:name="fun.stak.views.company.CompanyInfoFragment"
+        android:label="CompanyInfo"
+        tools:layout="@layout/fragment_company_info" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/freeboard"
+        android:name="fun.stak.views.main.FreeBoardFragment"
+        android:label="FreeBoard"
+        tools:layout="@layout/fragment_free_board" />
+</navigation>
